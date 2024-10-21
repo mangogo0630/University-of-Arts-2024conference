@@ -9,6 +9,7 @@
 	--varcolor5: #feed91;
 	--varcolor6: #09195d;--varcolor6-alt: #1730c0;
 }
+/* #EF3F3F #6BCDE3 */
 #sidebar a,a:hover, a:active, a:focus {
 	text-decoration: none;
 	outline: 0;
@@ -3778,24 +3779,22 @@ a.menu-link { display: none;
 
 /* Intro */
 #background-video {
-	width: 100%;
+	width: 110%;
 	height: 100vh;
 	object-fit:cover;
 	transform-style: preserve-3d;
 	position: absolute;
-	left: 0;
+	left: 20;
 	right: 0;
 	bottom: 0;
 	z-index: -1;
   }
   #title{
 	position: absolute;
-	
-	max-height: 58vh;
-	max-width: 100%;
+	height: 35vh;
 	margin: auto auto;
-	/*left: 1vw;
-	right: 0;*/
+	left: 38vw;
+	right: 0;
 	bottom: 10.5vh;
   }
   #hand{
@@ -3812,15 +3811,17 @@ a.menu-link { display: none;
 	#title{
 		height: auto;
 		width: 100%;
-
 		bottom: calc(50vh - 180vw/6);
+		left: 1vw;
 	}
 	#background-video{
 		display: none;
+/* 控制靠左的位置 */
 	}
 	#hand{
 		display: block;
 	}
+
   }
   @media (max-aspect-ratio: 55/100) {
 	
