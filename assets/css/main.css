@@ -3795,11 +3795,19 @@ a.menu-link { display: none;
   }
   #title{
 	position: absolute;
-	height: 35vh;
+	height: 25vh;
 	margin: auto auto;
-	left: 38vw;
+	left: 50vw;
 	right: 0;
-	bottom: 10.5vh;
+	bottom: 30vh;
+  }
+  #date{
+	position: absolute;
+	height: 20vh;
+	margin: auto auto;
+	left: 45vw;
+	right: 0;
+	bottom: 12vh;
   }
   #hand{
 	position: absolute;
@@ -3814,10 +3822,13 @@ a.menu-link { display: none;
   @media (max-aspect-ratio: 1/1) {
 	#title{
 		height: auto;
-		width: 100%;
-		bottom: calc(50vh - 180vw/6);
-		left: 1vw;
+		width: 80%;
+		bottom: calc(50vh - 150vw/6);
+		left: 20vw;
 	}
+	#date{
+		display: none;
+	  }
 	#background-video{
 		display: none;
 /* 控制靠左的位置 */
