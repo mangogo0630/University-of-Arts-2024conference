@@ -27,7 +27,7 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	font-family: 'Noto Sans TC', sans-serif;
-	margin: auto 0;
+	margin: 0 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -2951,7 +2951,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .content {
-				padding: 4em 4em 2em 4em ;
+				padding: 0em 4em 2em 4em ;
 			}
 
 		}
@@ -3514,7 +3514,9 @@ a.menu-link { display: none;
 				
 					display: block;
 					margin: 0 auto;
-					height: 20vh;
+					max-height: 20vh;
+					
+
 					
 				}
 				}
