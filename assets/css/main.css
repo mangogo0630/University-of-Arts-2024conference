@@ -2911,7 +2911,9 @@ input, select, textarea {
 			-ms-justify-content: center;
 			justify-content: center;
 			width: 50em;
-			-ms-flex: 1;
+			-webkit-flex: 1; /* 供應商前綴版本，用於舊版 Safari 等 */
+			-ms-flex: 1;     /* 用於舊版 IE */
+			flex: 1;         /* 標準屬性，應放在最後 */
 		}
 
 			.spotlights > section > .content > .inner {
@@ -3380,9 +3382,9 @@ input, select, textarea {
 	}
 
 /* Footer */
-	#footer {
+	/* #footer {
 		margin-left: 11em;
-	}
+	} */
 	#sidebar + #wrapper + #footer {
 		margin-left: 11em;
 	}
